@@ -7,7 +7,7 @@ function Message() {
   const msg = document.createElement("div");
   const removemsg = document.createElement("icon");
   removemsg.classList.add("del");
-  removemsg.textContent = "Del";
+  removemsg.textContent = "X";
   msg.textContent = input.value;
   removemsg.addEventListener("click", () => {
     msg.remove();
