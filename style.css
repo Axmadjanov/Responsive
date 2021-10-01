@@ -28,6 +28,7 @@
 h1 {
   color: #fff;
   grid-column: 3/5;
+  text-align: center;
 }
 .div {
   grid-column: 2/6;
@@ -46,17 +47,23 @@ input {
   grid-row: 11/12;
 }
 .style {
-  margin-top: 5px;
+   margin: 5px;
+  /* margin-top: 5px; */
   grid-column: 2/6;
+  color: #fff;
   box-sizing: content-box;
   padding: 5px;
-  border-radius: 3px;
-  background: aliceblue;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px 2px rgb(255, 144, 9);
+  background: aliceblue 0.7s;
+  cursor: pointer
 }
 .del {
   cursor: pointer;
   display: flex;
   justify-content: flex-end;
+   text-shadow: 1px 2px 2px red;
+  color: rgb(255, 35, 35);
 }
 @media only screen and (max-width: 920px) {
   .main {
@@ -79,13 +86,19 @@ input {
     grid-column: 2/6;
   }
   .style {
+     margin: 5px;
     grid-column: 2/6;
+      color: #fff;
+cursor:pointer;
     box-sizing: content-box;
-    font-size: 10px;
+    font-size: 10px; 
+    box-shadow: 0 2px 3px 2px rgb(255, 144, 9);
     background: aliceblue;
   }
   .del {
     font-size: 10px;
+    text-shadow: 1px 2px 2px red;
+  color: rgb(255, 35, 35);
     cursor: pointer;
     display: flex;
     justify-content: flex-end;
